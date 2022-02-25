@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mr.Coffee</title>
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <script src="src/form.js" defer></script>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <div class="container nav-bar">
+                <a href="index.html"><img class="logo-nav" src="assets/full_logo_white.png"></a>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">Qui sommes-nous?</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container logo-main-black">
+            <img class="logo-main" src="assets/logo_mrcoffee.png">
+        </div>
+
+        <div class="container">
+            <h2 class="title-form">Dites nous tout !</h2>
+            <form class="form">
+                <label for="surname">Nom *</label>
+                <input id="form-surname" type="text" name="surname" />
+                <div class="form-errMesage" id="errSurname"></div>
+
+                <label for="prenom">Prénom *</label>
+                <input id="form-name" type="text" name="name" />
+                <div class="form-errMesage" id="errName"></div>
+
+                <label for="telephone">Téléphone *</label>
+                <input id="form-phone" type="tel" name="telephone" />
+                <div class="form-errMesage" id="errPhone"></div>
+
+                <label for="mail">Adresse mail *</label>
+                <input id="form-mail" type="email" name="mail" />
+                <div class="form-errMesage" id="errMail"></div>
+
+                <label for="message">Message *</label>
+                <textarea id="form-msg" type="text" name="msg" placeholder="Tapez votre message ici"></textarea>
+                <div class="form-errMesage" id="errMsg"></div>
+                <div class="form-errMesage" id="errEmpty"></div>
+                <button id="form-btn" type="submit">envoyer</button>
+            </form>
+        </div>
+
+        <div class="container contact">
+            <h2 class="title-contact">On vous attend !</h2>
+            <div class="address">
+                <p><span>Mr.Coffee</span><br>15 place Jules Guesde<br>75006 Paris</p>
+                <p>Tel : +33 9 46 25 78 45<br>Mail : contact@mr-coffee.com</p>
+            </div>
+            <img class="map" src="assets/carte_contact.png" alt="">
+        </div>
+
+        <div id="modal">
+            <div class="modal-content">
+                <img src="assets/logo_dark.png"></img>
+                <h2>merci</h2>
+                <p>Votre message a bien été envoyé !</p>
+                <p>Nous essaierons d&#8217;y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+                <button id="modal-off">fermer</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div><img class="logo-footer" src="assets/logo_blanc.png"></div>
+                <div class="social">
+                    <p class="social-text">Suivez nous sur les réseaux sociaux !</p>
+                    <section class="footer-icons">
+                        <a href="#"><img class="icon" src="assets/logo_linkedin.png"></a>
+                        <a href="#"><img class="icon" src="assets/logo_twitter.png"></a>
+                        <a href="#"><img class="icon" src="assets/logo_facebook.png"></a>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
