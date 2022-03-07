@@ -133,18 +133,7 @@ function sendFormData() {
 };
 
 function clearForm() {
-    inputSurname.value = '';
-    inputName.value = '';
-    inputPhone.value = '';
-    inputMail.value = '';
-    inputMsg.value = '';
-    errSurname.innerHTML = '';
-    errName.innerHTML = '';
-    errPhone.innerHTML = '';
-    errMail.innerHTML = '';
-    errMsg.innerHTML = '';
-    errEmpty.innerHTML = '';
-
+    form.reset();
 };
 
 form.addEventListener('submit', (e) => {
