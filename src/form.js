@@ -108,7 +108,7 @@ function testMsg() {
 testMsg();
 
 function isInputEmpty() {
-    if ((inputSurname.value == null || inputSurname.value == "") ||
+    if ((inputSurname.value == null || inputSurname.value == '') ||
         (inputName.value == null || inputName.value == '') ||
         (inputPhone.value == null || inputPhone.value == '') ||
         (inputMail.value == null || inputMail.value == '') ||
@@ -134,6 +134,7 @@ function sendFormData() {
 
 function clearForm() {
     form.reset();
+    errEmpty.innerHTML = '';
 };
 
 form.addEventListener('submit', (e) => {
